@@ -1,7 +1,7 @@
 # Data analysis description
 
-1.Script assumes that working directory is set to the directory with the data 
-1.Features were loaded and filtered to include only features with "mean()" and "std()" substrings using grep function
+1. Script assumes that working directory is set to the directory with the data 
+1.  Features were loaded and filtered to include only features with "mean()" and "std()" substrings using grep function
 2. Activity file was loaded to use a mapping for activity names
 3. Function "process_dataset" with parameters for "X" file, "Y" file and subject file processes a dataset (either test or train) to generate tidy subset of data
 3. Function loads the "x" data file, selects columns identified in step 1

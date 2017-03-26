@@ -64,10 +64,10 @@ train_data <- process_dataset("train/X_train.txt","train/Y_train.txt", "train/su
 final_dataset <- rbind(test_data, train_data)
 
 #save data to file
-write.csv(x = final_dataset, file = "tidy_data.csv", row.names = FALSE)
+write.table(x = final_dataset, file = "tidy_data.txt", row.names = FALSE)
 
 summary_data <- final_dataset %>% group_by(subject, activity) %>% dplyr::summarise_all(funs(mean))
 
 #save summary data
 
-write.csv(summary_data, file = "summary.csv", row.names = F)
+write.table(summary_data, file = "summary.txt", row.names = F)
